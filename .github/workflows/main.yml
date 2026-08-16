@@ -1,0 +1,42 @@
+name: Deploy Static Content to GitHub Pages
+
+on:
+  push:
+    branches: ["main"] # 當 main 分支有新 commit 時觸發（若你的分支叫 master 請自行修改）
+
+  # 允許在 Actions 頁面手動點擊執行
+  workflow_dispatch:
+
+# 設定權限，允許此 Action 修改 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 確保同一時間只有一個部署在執行
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # 💡 關鍵步驟：上傳當前目錄下的所有靜態檔案（即你發布出來的 wwwroot 內容）
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.wwwroot' # 上傳根目錄所有檔案
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
