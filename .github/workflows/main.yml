@@ -18,22 +18,18 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fix base href
-        run: |
-          sed -i 's|<base href="/" />|<base href="/StarCG-MudBlazor/" />|' wwwroot/index.html
-
       - name: Add .nojekyll
-        run: touch wwwroot/.nojekyll
+        run: touch .nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -41,7 +37,7 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: wwwroot
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
