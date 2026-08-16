@@ -1,4 +1,4 @@
-name: Deploy Blazor WASM to GitHub Pages
+name: Deploy GitHub Pages
 
 on:
   push:
@@ -13,34 +13,27 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 10.x
-
-      - name: Restore
-        run: dotnet restore
-
-      - name: Publish
-        run: dotnet publish -c Release -o release
+        uses: actions/checkout@v4
 
       - name: Fix base href
         run: |
-          sed -i 's|<base href="/" />|<base href="/StarCG-MudBlazor/" />|' release/wwwroot/index.html
+          sed -i 's|<base href="/" />|<base href="/StarCG-MudBlazor/" />|' wwwroot/index.html
 
       - name: Add .nojekyll
-        run: touch release/wwwroot/.nojekyll
+        run: touch wwwroot/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -48,18 +41,8 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: release/wwwroot
+          path: wwwroot
 
-  deploy:
-    needs: build
-
-    runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
