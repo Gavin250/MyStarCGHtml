@@ -28,11 +28,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Add .nojekyll
-        run: touch .nojekyll
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Verify Blazor files
+        run: |
+          echo "=== index.html references ==="
+          grep -o 'dotnet\.[a-z0-9]*\.js' index.html | head -10
+
+          echo "=== Framework files ==="
+          ls -lh _framework/ | head -30
+
+          echo "=== SHA256 ==="
+          sha256sum _framework/dotnet.*.js
+
+      - name: Add .nojekyll
+        run: touch .nojekyll
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
