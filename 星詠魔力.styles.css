@@ -1,3 +1,356 @@
+/* /Components/寵物資訊元件.razor.rz.scp.css */
+/* 全域卡片容器調整與置中 */
+.pet-card-container[b-61wb0xc0h9] {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px !important;
+    overflow: hidden;
+    background: #ffffff;
+    margin: 20px auto; /* 核心：卡片自動置中 */
+}
+
+/* Header & Footer 背景色 */
+.pet-header-bg[b-61wb0xc0h9] {
+    background: #f8f9fc;
+}
+
+.pet-footer-bg[b-61wb0xc0h9] {
+    background: #fafafa;
+}
+
+/* 階級徽章的基礎與動態樣式 */
+.pet-tier[b-61wb0xc0h9] {
+    width: 60px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tier-gold[b-61wb0xc0h9] {
+    background: #fef3c7;
+    color: #d97706;
+    border: 1px solid #fde68a;
+}
+
+.tier-silver[b-61wb0xc0h9] {
+    background: #e5e7eb;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+}
+
+.tier-bronze[b-61wb0xc0h9] {
+    background: #ffedd5;
+    color: #ea580c;
+    border: 1px solid #fed7aa;
+}
+
+.tier-default[b-61wb0xc0h9] {
+    background: #dce5f3;
+    color: #374151;
+}
+
+/* 核心修改：正方形圖片外框 (利用 MudBlazor 元件寬度搭配 aspect-ratio) */
+.pet-image-frame[b-61wb0xc0h9] {
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 1 / 1; /* 強制正方形 */
+    margin: 0 auto;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #f1f4f9, #e7ebf2);
+    border: 1px solid #dfe3e9;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.04), 0 3px 8px rgba(0,0,0,.06);
+}
+
+.pet-image[b-61wb0xc0h9] {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+/* 屬性 Chips 包裹區（防跑版） */
+.elements-wrapper[b-61wb0xc0h9] {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* ============================= */
+/* 強制維持亮色底色與文字顏色 */
+/* ============================= */
+
+/* 火屬性：明亮粉紅底、深紅字 */
+[b-61wb0xc0h9] .fire {
+    background-color: #fee2e2 !important;
+    color: #dc2626 !important;
+}
+
+/* 水屬性：明亮粉藍底、深藍字 */
+[b-61wb0xc0h9] .water {
+    background-color: #dbeafe !important;
+    color: #2563eb !important;
+}
+
+/* 地屬性：明亮粉綠底、深綠字 */
+[b-61wb0xc0h9] .earth {
+    background-color: #dcfce7 !important;
+    color: #16a34a !important;
+}
+
+/* 風屬性：明亮粉紫底、深紫字 */
+[b-61wb0xc0h9] .wind {
+    background-color: #f3e8ff !important;
+    color: #9333ea !important;
+}
+/* /Components/查價器表格元件.razor.rz.scp.css */
+.market-table[b-lcflm7xi15] {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+    .market-table .mud-table-container[b-lcflm7xi15] {
+        height: 100%;
+    }
+
+    /* ========================= */
+    /* Header */
+    /* ========================= */
+
+    .market-table .mud-table-head[b-lcflm7xi15] {
+        background: #f8f3ea;
+    }
+
+    .market-table .mud-table-cell[b-lcflm7xi15] {
+        border-bottom: 1px solid #e7dfd1;
+        padding: 16px 18px;
+    }
+
+.item-name-header[b-lcflm7xi15] {
+    min-width: 220px;
+}
+
+.price-header[b-lcflm7xi15] {
+    min-width: 120px;
+}
+
+.action-header[b-lcflm7xi15] {
+    width: 100px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.header-content[b-lcflm7xi15] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort-button[b-lcflm7xi15] {
+    margin-left: 8px;
+}
+
+.price-sort-icon[b-lcflm7xi15] {
+    margin-left: 2px;
+}
+
+/* ========================= */
+/* Item */
+/* ========================= */
+
+.market-item-name[b-lcflm7xi15] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.favorite-button[b-lcflm7xi15] {
+    border: 1px solid #ddcda9;
+    border-radius: 8px;
+}
+
+/* ========================= */
+/* Price */
+/* ========================= */
+
+.market-price[b-lcflm7xi15] {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.price-main[b-lcflm7xi15] {
+    color: #d99b00;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price-sub[b-lcflm7xi15] {
+    color: #555;
+    font-size: 14px;
+}
+
+/* ========================= */
+/* Location */
+/* ========================= */
+
+.market-location[b-lcflm7xi15] {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 17px;
+}
+
+.location-pin[b-lcflm7xi15] {
+    font-size: 16px;
+}
+
+/* ========================= */
+/* Action */
+/* ========================= */
+
+.action-cell[b-lcflm7xi15] {
+    width: 100px;
+    min-width: 100px;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.row-actions[b-lcflm7xi15] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.action-button[b-lcflm7xi15] {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+    .action-button:hover[b-lcflm7xi15] {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+/* ========================= */
+/* Empty */
+/* ========================= */
+
+.empty-table[b-lcflm7xi15] {
+    padding: 40px;
+    text-align: center;
+    color: #888;
+}
+/* /Components/法蘭城地圖元件.razor.rz.scp.css */
+.map-scroll-viewport[b-wj9cp9p38r] {
+    width: 100%;
+    max-height: 700px;
+    overflow: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    /*
+         * 讓縮放後的地圖整體水平置中
+         */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.map-scaled-wrapper[b-wj9cp9p38r] {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.image-container[b-wj9cp9p38r] {
+    position: absolute;
+    /*
+         * wrapper 的中心
+         */
+    left: 50%;
+    top: 0;
+    width: 960px;
+    height: 685px;
+    /*
+         * 上方中央固定
+         */
+    transform-origin: top center;
+    /*
+         * 把原圖中心對準 wrapper 中心，
+         * 再進行縮放
+         */
+    transition: transform 0.1s ease-out;
+}
+
+/* 標記容器：置中對齊像素點 */
+.marker-container[b-wj9cp9p38r] {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+         * marker 的座標仍然跟著地圖縮放，
+         * 但 marker 自己反向縮放，
+         * 所以紅點實際顯示尺寸維持 16px。
+         */
+    transform: translate(-50%, -50%) scale(calc(1 / var(--map-zoom)));
+    pointer-events: auto;
+}
+
+/* 文字標籤 */
+.marker-label[b-wj9cp9p38r] {
+    position: absolute;
+    bottom: 24px; /* 讓文字浮在紅點上方，原 JS 是偏右下方，可依喜好調整 */
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.label-text[b-wj9cp9p38r] {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.price-tag[b-wj9cp9p38r] {
+    color: #b22222;
+    margin-left: 4px;
+}
+
+.label-arrow[b-wj9cp9p38r] {
+    position: absolute;
+    bottom: -8px; /* 讓箭頭凸出在文字框的正下方 */
+    left: 50%; /* 靠齊文字框的 50% 寬度處 */
+    transform: translateX(-50%); /* 反向平移自身寬度的一半，達成完美絕對置中 */
+    /* 使用 CSS Border 繪製一個向下的三角形 */
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid rgba(255, 255, 255, 0.95); /* 顏色與文字框背景一致 */
+}
+
+/* 2. 中心紅點 */
+.red-dot[b-wj9cp9p38r] {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-tpuhxb62cg] {
     position: relative;
