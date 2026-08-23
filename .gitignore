@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+# Blazor framework files - do not modify
+_framework/** binary
+_framework/*.js binary
+_framework/*.wasm binary
+_framework/*.dat binary
+_framework/*.blat binary
+_framework/*.dll binary
+_framework/*.json binary
