@@ -8,3 +8,11 @@ _framework/*.dat binary
 _framework/*.blat binary
 _framework/*.dll binary
 _framework/*.json binary
+
+
+*.js binary
+*.wasm binary
+*.dll binary
+*.dat binary
+*.json binary
+_framework/** binary
