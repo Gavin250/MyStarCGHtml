@@ -8,3 +8,4 @@ _framework/*.dat binary
 _framework/*.blat binary
 _framework/*.dll binary
 _framework/*.json binary
+_framework/*.gif binary
