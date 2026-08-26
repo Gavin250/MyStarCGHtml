@@ -1,0 +1,1412 @@
+{
+  "specialMaterials": [
+    {
+      "name": "鋼騎之礦",
+      "source": "1. 森羅萬象土/風/炎/水洞獎勵隨機獲得。 2. 於海賊的寶地用挖掘技能 6 級 以上採集能隨機取得。",
+      "shopPrice": 24000,
+      "tradeable": true
+    },
+    {
+      "name": "魔族的水晶",
+      "source": "1. 森羅萬象土/風/炎/水洞獎勵隨機獲得。 2. 部份 BOSS 戰隨機掉落： 索奇亞： 巫師就職任務(露比)、沒落的村莊(法爾肯)、沙漠之祠(隨機出現的狂戰將軍) 莎蓮娜： 挑戰神獸(神獸)、開啟者(猶大)、詛咒的迷宮(所有王)、冰雪的牢籠(依代) 庫魯克斯島： 失翼之龍(耶卡) 聖域星塔： 塔內以上對應 BOSS 同樣掉落",
+      "shopPrice": 60000,
+      "tradeable": true
+    },
+    {
+      "name": "誓言之證",
+      "source": "1. 森羅萬象土/風/炎/水洞獎勵隨機獲得。 2. 挑戰神獸貝茲雷姆迷宮的「大炸彈 / 大地翼龍」掉落。",
+      "shopPrice": 24000,
+      "tradeable": true
+    },
+    {
+      "name": "火焰之魂",
+      "source": "1. 魔物狩獵獎勵。 2. 莎蓮娜(120, 325) 附近打「地獄妖犬」隨機掉落。",
+      "shopPrice": 24000,
+      "tradeable": true
+    },
+    {
+      "name": "德特家的布",
+      "source": "1. 森羅萬象土/風/炎/水洞獎勵隨機獲得。",
+      "shopPrice": 40000,
+      "tradeable": true
+    },
+    {
+      "name": "蔓陀羅草的皮",
+      "source": "1. 魔物狩獵獎勵。 2. 莎蓮娜 傑諾瓦鎮外打「曼陀蘿草」隨機掉落。",
+      "shopPrice": 12000,
+      "tradeable": true
+    },
+    {
+      "name": "風龍蜥的甲殼",
+      "source": "1. 魔物狩獵獎勵。 2. 莎蓮娜 傑諾瓦鎮外打「風龍蜥」隨機掉落。",
+      "shopPrice": 12000,
+      "tradeable": true
+    },
+    {
+      "name": "妖草的血",
+      "source": "1. 魔物狩獵獎勵。 2. 芙蕾雅 土之洞窟打「妖草」隨機掉落。 3. 芙蕾雅 維諾亞村外打「妖草」隨機掉落。",
+      "shopPrice": 6000,
+      "tradeable": true
+    },
+    {
+      "name": "神眼",
+      "source": "1. 索奇亞 角笛大風穴打「水蜘蛛」隨機掉落。",
+      "shopPrice": 0,
+      "tradeable": false
+    }
+  ],
+  "clothVendors": [
+    {
+      "name": "麻布",
+      "location": "法蘭城流行商店 (117, 112)",
+      "price": 20
+    },
+    {
+      "name": "木棉布",
+      "location": "法蘭城流行商店 (117, 112)",
+      "price": 25
+    },
+    {
+      "name": "毛氈",
+      "location": "法蘭城流行商店 (117, 112)",
+      "price": 29
+    },
+    {
+      "name": "綿",
+      "location": "法蘭城流行商店 (117, 112)",
+      "price": 33
+    },
+    {
+      "name": "細線",
+      "location": "法蘭城流行商店 (117, 112)",
+      "price": 40
+    },
+    {
+      "name": "絹布",
+      "location": "1. 維諾亞村裝備店 (62, 42) 2. 魔法大學更衣室賣布商史瓦夫",
+      "price": 50
+    },
+    {
+      "name": "莎蓮娜線",
+      "location": "傑諾瓦鎮雜貨店 (43, 23)",
+      "price": 100
+    },
+    {
+      "name": "傑諾瓦線",
+      "location": "傑諾瓦鎮雜貨店 (43, 23)",
+      "price": 120
+    },
+    {
+      "name": "阿巴尼斯製的線",
+      "location": "魔法大學更衣室賣布商史瓦夫",
+      "price": 400
+    },
+    {
+      "name": "阿巴尼斯製的布",
+      "location": "魔法大學更衣室賣布商史瓦夫",
+      "price": 400
+    },
+    {
+      "name": "細麻布",
+      "location": "阿巴尼斯村村長的家 (36, 54)",
+      "price": 130
+    },
+    {
+      "name": "開米士毛線",
+      "location": "阿巴尼斯村村長的家 (36, 54)",
+      "price": 170
+    }
+  ],
+  "gatheringMaterials": {
+    "狩獵": [
+      {
+        "name": "小麥粉",
+        "category": "狩獵",
+        "feeFor4000": 1320,
+        "skillLevel": 1,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 133
+          },
+          {
+            "location": "米內葛爾島 坎村西南門外(602, 366)",
+            "timeMinutes": 135
+          }
+        ],
+        "unitPrice": 0.33
+      },
+      {
+        "name": "鹿皮",
+        "category": "狩獵",
+        "feeFor4000": 1320,
+        "skillLevel": 1,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 133
+          },
+          {
+            "location": "芙蕾雅 亞留特村東門外(648, 180)",
+            "timeMinutes": 141
+          }
+        ],
+        "unitPrice": 0.33
+      },
+      {
+        "name": "雞蛋",
+        "category": "狩獵",
+        "feeFor4000": 1320,
+        "skillLevel": 1,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 134
+          },
+          {
+            "location": "米內葛爾島 坎村北門外(600, 240)",
+            "timeMinutes": 134
+          }
+        ],
+        "unitPrice": 0.33
+      },
+      {
+        "name": "神聖米",
+        "category": "狩獵",
+        "feeFor4000": 1320,
+        "skillLevel": 1,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 135
+          },
+          {
+            "location": "艾爾沙島西門外 溫迪爾平原(191, 41)",
+            "timeMinutes": 134
+          }
+        ],
+        "unitPrice": 0.33
+      },
+      {
+        "name": "青椒",
+        "category": "狩獵",
+        "feeFor4000": 2000,
+        "skillLevel": 2,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 151
+          },
+          {
+            "location": "芙蕾雅 伊爾村外(590, 289)",
+            "note": "只有混點"
+          }
+        ],
+        "unitPrice": 0.5
+      },
+      {
+        "name": "蔥",
+        "category": "狩獵",
+        "feeFor4000": 2000,
+        "skillLevel": 2,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 149
+          },
+          {
+            "location": "布拉基姆高地 艾夏島東門外(74, 186)",
+            "timeMinutes": 148
+          }
+        ],
+        "unitPrice": 0.5
+      },
+      {
+        "name": "牛奶",
+        "category": "狩獵",
+        "feeFor4000": 2000,
+        "skillLevel": 2,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 149
+          },
+          {
+            "location": "米內葛爾島 坎那貝拉村南門外(590, 370)",
+            "timeMinutes": 149
+          }
+        ],
+        "unitPrice": 0.5
+      },
+      {
+        "name": "大豆",
+        "category": "狩獵",
+        "feeFor4000": 2000,
+        "skillLevel": 2,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 167
+          },
+          {
+            "location": "法蘭城遺跡 (111, 54)",
+            "timeMinutes": 149
+          }
+        ],
+        "unitPrice": 0.5
+      },
+      {
+        "name": "鹽",
+        "category": "狩獵",
+        "feeFor4000": 2520,
+        "skillLevel": 3,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 167
+          },
+          {
+            "location": "米內葛爾島 坎村南門外(709, 360)",
+            "timeMinutes": 169
+          }
+        ],
+        "unitPrice": 0.63
+      },
+      {
+        "name": "醬油",
+        "category": "狩獵",
+        "feeFor4000": 2520,
+        "skillLevel": 3,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 168
+          },
+          {
+            "location": "德威特島 摩頓村外(340, 561)",
+            "timeMinutes": 133
+          }
+        ],
+        "unitPrice": 0.63
+      },
+      {
+        "name": "雞肉",
+        "category": "狩獵",
+        "feeFor4000": 3080,
+        "skillLevel": 4,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 190
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮北門外(266, 378)",
+            "timeMinutes": 192
+          }
+        ],
+        "unitPrice": 0.77
+      },
+      {
+        "name": "芹菜",
+        "category": "狩獵",
+        "feeFor4000": 3080,
+        "skillLevel": 4,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 189
+          },
+          {
+            "location": "芙蕾雅 亞留特村東門外(603, 64)",
+            "timeMinutes": 209
+          }
+        ],
+        "unitPrice": 0.77
+      },
+      {
+        "name": "竹筍",
+        "category": "狩獵",
+        "feeFor4000": 3080,
+        "skillLevel": 4,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 192
+          },
+          {
+            "location": "芙蕾雅 亞留特村北門外(533, 41)",
+            "timeMinutes": 226
+          }
+        ],
+        "unitPrice": 0.77
+      },
+      {
+        "name": "海苔",
+        "category": "狩獵",
+        "feeFor4000": 3080,
+        "skillLevel": 4,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 192
+          },
+          {
+            "location": "芙蕾雅 亞留特村北門外(621, 27)",
+            "timeMinutes": 133
+          }
+        ],
+        "unitPrice": 0.77
+      },
+      {
+        "name": "牛肉",
+        "category": "狩獵",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 267
+          },
+          {
+            "location": "索奇亞 奇利村東門外(354, 364)",
+            "timeMinutes": 200
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "星鰻",
+        "category": "狩獵",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 269
+          },
+          {
+            "location": "芙蕾雅 維諾亞村外(425, 466)",
+            "timeMinutes": 268
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "薑",
+        "category": "狩獵",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 267
+          },
+          {
+            "location": "索奇亞 奇利村東門外(415, 298)",
+            "timeMinutes": 267
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "馬鈴薯",
+        "category": "狩獵",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 265
+          },
+          {
+            "location": "庫魯克斯島 魯米那斯村外(260, 870)",
+            "timeMinutes": 225
+          },
+          {
+            "location": "布拉基姆高地 艾夏島東門外(176, 233)",
+            "timeMinutes": 190
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "胡椒",
+        "category": "狩獵",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 221
+          },
+          {
+            "location": "庫魯克斯島 米諾基亞鎮東門外(550, 860)",
+            "timeMinutes": 223
+          },
+          {
+            "location": "光之路(201, 18)",
+            "timeMinutes": 219
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "米",
+        "category": "狩獵",
+        "feeFor4000": 5320,
+        "skillLevel": 6,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 267
+          },
+          {
+            "location": "索奇亞 加納村外(626, 304)",
+            "timeMinutes": 331
+          }
+        ],
+        "unitPrice": 1.33
+      },
+      {
+        "name": "砂糖",
+        "category": "狩獵",
+        "feeFor4000": 5320,
+        "skillLevel": 6,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 460
+          },
+          {
+            "location": "莎蓮娜 魔法大學裡面(85, 46)",
+            "timeMinutes": 465
+          }
+        ],
+        "unitPrice": 1.33
+      },
+      {
+        "name": "咖哩塊",
+        "category": "狩獵",
+        "feeFor4000": 8000,
+        "skillLevel": 7,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 335
+          },
+          {
+            "location": "莎蓮娜 傑諾瓦鎮東門外(270, 426)",
+            "timeMinutes": 454
+          },
+          {
+            "location": "布拉基姆高地 需從梅布爾隘地去(131, 224)",
+            "timeMinutes": 209
+          }
+        ],
+        "unitPrice": 2.0
+      },
+      {
+        "name": "辣椒",
+        "category": "狩獵",
+        "feeFor4000": 8000,
+        "skillLevel": 7,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 335
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾東門外(321, 367)",
+            "timeMinutes": 338
+          }
+        ],
+        "unitPrice": 2.0
+      },
+      {
+        "name": "高級奶油",
+        "category": "狩獵",
+        "feeFor4000": 8000,
+        "skillLevel": 7,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 444
+          },
+          {
+            "location": "庫魯克斯島 橋南後(476, 666)",
+            "timeMinutes": 333
+          }
+        ],
+        "unitPrice": 2.0
+      },
+      {
+        "name": "霜降牛肉",
+        "category": "狩獵",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 677
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮東門外(419, 450)",
+            "timeMinutes": 446
+          },
+          {
+            "location": "米內葛爾島 坎那貝拉村南門外(604, 421)",
+            "timeMinutes": 444
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "阿巴尼斯哈蜜瓜",
+        "category": "狩獵",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋"
+          },
+          {
+            "location": "莎蓮娜 阿巴尼斯村外(88, 74)",
+            "note": "唯一點"
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "螃蟹",
+        "category": "狩獵",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 452
+          },
+          {
+            "location": "莎蓮娜 傑諾瓦鎮東門外(318, 503)",
+            "timeMinutes": 445
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "溼地毒蛇",
+        "category": "狩獵",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋"
+          },
+          {
+            "location": "莎蓮娜 魔法大學 地底湖地下 2F 的小島(37, 49)",
+            "note": "唯一點"
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "伊勢蝦",
+        "category": "狩獵",
+        "feeFor4000": 18200,
+        "skillLevel": 9,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 661
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮西門外(147, 400)",
+            "timeMinutes": 669
+          }
+        ],
+        "unitPrice": 4.55
+      },
+      {
+        "name": "海膽",
+        "category": "狩獵",
+        "feeFor4000": 18200,
+        "skillLevel": 9,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 664
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮西門外(163, 411)",
+            "timeMinutes": 665
+          }
+        ],
+        "unitPrice": 4.55
+      },
+      {
+        "name": "魚翅",
+        "category": "狩獵",
+        "feeFor4000": 40000,
+        "skillLevel": 10,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 1337
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮東門外(390, 530)",
+            "timeMinutes": 1434
+          }
+        ],
+        "unitPrice": 10.0
+      },
+      {
+        "name": "鱉",
+        "category": "狩獵",
+        "feeFor4000": 40000,
+        "skillLevel": 10,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 1325
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮北門外(298, 291)",
+            "timeMinutes": 1378
+          }
+        ],
+        "unitPrice": 10.0
+      }
+    ],
+    "挖掘": [
+      {
+        "name": "銅",
+        "category": "挖掘",
+        "feeFor4000": 1320,
+        "skillLevel": 1,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 134
+          },
+          {
+            "location": "芙蕾雅 法蘭城西門外 國營第 24 坑道 B1(12, 29)",
+            "timeMinutes": 135
+          }
+        ],
+        "unitPrice": 0.33
+      },
+      {
+        "name": "鐵",
+        "category": "挖掘",
+        "feeFor4000": 2000,
+        "skillLevel": 2,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 149
+          },
+          {
+            "location": "芙蕾雅 法蘭城西門外 國營第24坑道B4 B3往東北到B4(33, 31) (任務礦工的安全帽)",
+            "timeMinutes": 134
+          }
+        ],
+        "unitPrice": 0.5
+      },
+      {
+        "name": "銀",
+        "category": "挖掘",
+        "feeFor4000": 2520,
+        "skillLevel": 3,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 169
+          },
+          {
+            "location": "芙蕾雅 法蘭城西門外 國營第24坑道B4 B3往西北到B4(27, 21) (任務礦工的安全帽)",
+            "timeMinutes": 134
+          }
+        ],
+        "unitPrice": 0.63
+      },
+      {
+        "name": "鋁",
+        "category": "挖掘",
+        "feeFor4000": 2520,
+        "skillLevel": 3,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 190
+          },
+          {
+            "location": "艾夏島東門外 布拉基姆高地 黑歷史之石洞第一層(163, 191)",
+            "timeMinutes": 186
+          }
+        ],
+        "unitPrice": 0.63
+      },
+      {
+        "name": "純銀",
+        "category": "挖掘",
+        "feeFor4000": 3080,
+        "skillLevel": 4,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 189
+          },
+          {
+            "location": "芙蕾雅 亞留特村東門外 哈巴魯東邊洞窟地下 1 樓(14, 14)",
+            "timeMinutes": 224
+          },
+          {
+            "location": "艾夏島東門外 布拉基姆高地 過瀑布後(267, 301)",
+            "timeMinutes": 167
+          }
+        ],
+        "unitPrice": 0.77
+      },
+      {
+        "name": "金",
+        "category": "挖掘",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 223
+          },
+          {
+            "location": "芙蕾雅 亞留特村東門外 哈巴魯東邊洞窟地下 1 樓(42, 10)",
+            "timeMinutes": 269
+          },
+          {
+            "location": "艾夏島東門外 布拉基姆高地 過瀑布後(261, 255)",
+            "timeMinutes": 190
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "白金",
+        "category": "挖掘",
+        "feeFor4000": 5320,
+        "skillLevel": 6,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 268
+          },
+          {
+            "location": "索奇亞 奇利村北門外 海洞地下 2 樓(20, 17) 旁邊",
+            "timeMinutes": 333
+          }
+        ],
+        "unitPrice": 1.33
+      },
+      {
+        "name": "鋼騎之礦",
+        "category": "挖掘",
+        "feeFor4000": 5320,
+        "skillLevel": 6,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "note": "無固定時間"
+          },
+          {
+            "location": "海賊的礦山全域 (任務海賊的寶地)",
+            "note": "唯一點"
+          }
+        ],
+        "unitPrice": 1.33
+      },
+      {
+        "name": "幻之鋼",
+        "category": "挖掘",
+        "feeFor4000": 8000,
+        "skillLevel": 7,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 335
+          },
+          {
+            "location": "莎蓮娜 傑諾瓦鎮西門外 莎蓮娜海洞地下 2 樓(12, 6)",
+            "timeMinutes": 451
+          }
+        ],
+        "unitPrice": 2.0
+      },
+      {
+        "name": "幻之銀",
+        "category": "挖掘",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 444
+          },
+          {
+            "location": "索奇亞 奇利村北門外 海洞地下 2 樓(33, 15)",
+            "timeMinutes": 663
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "藍龍之鱗",
+        "category": "挖掘",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "note": "無固定時間"
+          },
+          {
+            "location": "莎蓮娜 魔法大學 青龍的洞窟 頂層青龍之巢(63, 36)",
+            "note": "唯一點"
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "永久冰石",
+        "category": "挖掘",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "note": "無固定時間"
+          },
+          {
+            "location": "莎蓮娜 魔法大學 青龍的洞窟 地下 2 樓(20, 21)",
+            "note": "唯一點"
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "達馬斯礦",
+        "category": "挖掘",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 191
+          },
+          {
+            "location": "米內葛爾島 阿凱魯法村南門外 南恰拉山第一通道(9, 33)",
+            "timeMinutes": 438
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "勒格耐席鉧",
+        "category": "挖掘",
+        "feeFor4000": 18200,
+        "skillLevel": 9,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 669
+          },
+          {
+            "location": "莎蓮娜 傑諾瓦鎮西門外 西方洞窟地下 1 樓(21, 27)",
+            "timeMinutes": 1344
+          }
+        ],
+        "unitPrice": 4.55
+      },
+      {
+        "name": "謝爾哈特礦",
+        "category": "挖掘",
+        "feeFor4000": 18200,
+        "skillLevel": 9,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 670
+          },
+          {
+            "location": "米內葛爾島 坎那貝拉村西門外 海底通道 1 樓(37, 40)",
+            "timeMinutes": 670
+          }
+        ],
+        "unitPrice": 4.55
+      },
+      {
+        "name": "喜馬拉斯礦",
+        "category": "挖掘",
+        "feeFor4000": 40000,
+        "skillLevel": 10,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 1453
+          },
+          {
+            "location": "庫魯克斯島 米諾基亞鎮西門外 伊利斯礦山大坑道(118, 125)",
+            "note": "只有混點"
+          }
+        ],
+        "unitPrice": 10.0
+      },
+      {
+        "name": "奧利哈鋼",
+        "category": "挖掘",
+        "feeFor4000": 40000,
+        "skillLevel": 10,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 1237
+          },
+          {
+            "location": "莎蓮娜 傑諾瓦鎮西門外 西方洞窟地下 2 樓(49, 50)",
+            "timeMinutes": 2814
+          }
+        ],
+        "unitPrice": 10.0
+      }
+    ],
+    "木材": [
+      {
+        "name": "印度輕木",
+        "category": "木材",
+        "feeFor4000": 1320,
+        "skillLevel": 1,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 133
+          },
+          {
+            "location": "芙蕾雅 法蘭城東門外(491, 197)",
+            "timeMinutes": 133
+          }
+        ],
+        "unitPrice": 0.33
+      },
+      {
+        "name": "樅",
+        "category": "木材",
+        "feeFor4000": 2000,
+        "skillLevel": 2,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 133
+          },
+          {
+            "location": "芙蕾雅 法蘭城西門外(451, 163)",
+            "timeMinutes": 146
+          }
+        ],
+        "unitPrice": 0.5
+      },
+      {
+        "name": "黃月木",
+        "category": "木材",
+        "feeFor4000": 2520,
+        "skillLevel": 3,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 167
+          },
+          {
+            "location": "索奇亞 奇利村東門外(295, 325)",
+            "timeMinutes": 192
+          }
+        ],
+        "unitPrice": 0.63
+      },
+      {
+        "name": "鐵杉",
+        "category": "木材",
+        "feeFor4000": 3080,
+        "skillLevel": 4,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 191
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮東門外(485, 537)",
+            "timeMinutes": 190
+          }
+        ],
+        "unitPrice": 0.77
+      },
+      {
+        "name": "琵琶木",
+        "category": "木材",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 222
+          },
+          {
+            "location": "米內葛爾島 阿凱魯法村南門外(203, 346)",
+            "timeMinutes": 222
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "茱萸木",
+        "category": "木材",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 191
+          },
+          {
+            "location": "艾爾莎島北門外 蓋雷布倫森林(187, 43)",
+            "timeMinutes": 191
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "赤松",
+        "category": "木材",
+        "feeFor4000": 5320,
+        "skillLevel": 6,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 271
+          },
+          {
+            "location": "米內葛爾島 阿凱魯法村南門外(192, 375)",
+            "timeMinutes": 267
+          }
+        ],
+        "unitPrice": 1.33
+      },
+      {
+        "name": "樸",
+        "category": "木材",
+        "feeFor4000": 8000,
+        "skillLevel": 7,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 335
+          },
+          {
+            "location": "米內葛爾島 阿凱魯法村南門外(170, 460)",
+            "timeMinutes": 333
+          }
+        ],
+        "unitPrice": 2.0
+      },
+      {
+        "name": "杉",
+        "category": "木材",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 449
+          },
+          {
+            "location": "米內葛爾島 坎那貝拉村南門外(580, 325)",
+            "timeMinutes": 445
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "單木",
+        "category": "木材",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 189
+          },
+          {
+            "location": "米內葛爾島 阿凱魯法南門外(234, 425)",
+            "timeMinutes": 270
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "絲柏",
+        "category": "木材",
+        "feeFor4000": 18200,
+        "skillLevel": 9,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 675
+          },
+          {
+            "location": "庫魯克斯島 橋南後 紳士淑女養成所(349, 591)",
+            "timeMinutes": 671
+          }
+        ],
+        "unitPrice": 4.55
+      },
+      {
+        "name": "梣",
+        "category": "木材",
+        "feeFor4000": 40000,
+        "skillLevel": 10,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 1326
+          },
+          {
+            "location": "庫魯克斯島 米諾基亞鎮東門外(501, 723)",
+            "timeMinutes": 1340
+          }
+        ],
+        "unitPrice": 10.0
+      }
+    ],
+    "花草": [
+      {
+        "name": "蘋果薄荷",
+        "category": "花草",
+        "feeFor4000": 1320,
+        "skillLevel": 1,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 138
+          },
+          {
+            "location": "芙蕾雅 法蘭城西門外(500, 85)",
+            "timeMinutes": 133
+          }
+        ],
+        "unitPrice": 0.33
+      },
+      {
+        "name": "檸檬草",
+        "category": "花草",
+        "feeFor4000": 2000,
+        "skillLevel": 2,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 154
+          },
+          {
+            "location": "芙蕾雅 法蘭城西門外(515, 100)",
+            "timeMinutes": 167
+          }
+        ],
+        "unitPrice": 0.5
+      },
+      {
+        "name": "蝴蝶花",
+        "category": "花草",
+        "feeFor4000": 2520,
+        "skillLevel": 3,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 167
+          },
+          {
+            "location": "芙蕾雅 法蘭城西門外(505, 120)",
+            "timeMinutes": 193
+          }
+        ],
+        "unitPrice": 0.63
+      },
+      {
+        "name": "果梨",
+        "category": "花草",
+        "feeFor4000": 3080,
+        "skillLevel": 4,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 193
+          },
+          {
+            "location": "庫魯克斯島 米諾基亞鎮東門外(601, 705)",
+            "timeMinutes": 198
+          },
+          {
+            "location": "庫魯克斯島 麥尼村外(432, 681)",
+            "timeMinutes": 198
+          }
+        ],
+        "unitPrice": 0.77
+      },
+      {
+        "name": "桃木",
+        "category": "花草",
+        "feeFor4000": 4000,
+        "skillLevel": 5,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 226
+          },
+          {
+            "location": "庫魯克斯島 米諾基亞鎮東門外(562, 792)",
+            "timeMinutes": 224
+          }
+        ],
+        "unitPrice": 1.0
+      },
+      {
+        "name": "番紅花",
+        "category": "花草",
+        "feeFor4000": 5320,
+        "skillLevel": 6,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 267
+          },
+          {
+            "location": "光之路(240, 90)",
+            "timeMinutes": 267
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮北門外(202, 350)",
+            "timeMinutes": 268
+          }
+        ],
+        "unitPrice": 1.33
+      },
+      {
+        "name": "百里香",
+        "category": "花草",
+        "feeFor4000": 8000,
+        "skillLevel": 7,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 336
+          },
+          {
+            "location": "光之路(173, 85)",
+            "timeMinutes": 337
+          },
+          {
+            "location": "庫魯克斯島 哥拉爾鎮東門外(474, 409)",
+            "timeMinutes": 340
+          }
+        ],
+        "unitPrice": 2.0
+      },
+      {
+        "name": "香草",
+        "category": "花草",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 454
+          },
+          {
+            "location": "米內葛爾島 坎那貝拉村西門外(476, 241)",
+            "timeMinutes": 443
+          },
+          {
+            "location": "庫魯克斯島 橋北上方(508, 508)",
+            "timeMinutes": 443
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "瞿麥",
+        "category": "花草",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 444
+          },
+          {
+            "location": "光之路(157, 115)",
+            "timeMinutes": 446
+          },
+          {
+            "location": "庫魯克斯島 橋南後(446, 569)",
+            "timeMinutes": 448
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "魔法紅蘿卜",
+        "category": "花草",
+        "feeFor4000": 11440,
+        "skillLevel": 8,
+        "gatheringSpots": [
+          {
+            "location": "素材屋"
+          },
+          {
+            "location": "莎蓮娜 魔法大學裡面(33, 167)",
+            "note": "唯一點"
+          }
+        ],
+        "unitPrice": 2.86
+      },
+      {
+        "name": "茴香",
+        "category": "花草",
+        "feeFor4000": 18200,
+        "skillLevel": 9,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 671
+          },
+          {
+            "location": "米內葛爾島 坎那貝拉村南門外(615, 389)",
+            "timeMinutes": 663
+          }
+        ],
+        "unitPrice": 4.55
+      },
+      {
+        "name": "七葉樹",
+        "category": "花草",
+        "feeFor4000": 40000,
+        "skillLevel": 10,
+        "gatheringSpots": [
+          {
+            "location": "素材屋",
+            "timeMinutes": 1348
+          },
+          {
+            "location": "庫魯克斯島 米諾基亞鎮東門外(613, 723)",
+            "timeMinutes": 1487
+          }
+        ],
+        "unitPrice": 10.0
+      }
+    ]
+  }
+}

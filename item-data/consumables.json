@@ -1,0 +1,1267 @@
+{
+  "craftingPrices": {
+    "1": 20,
+    "2": 40,
+    "3": 60,
+    "4": 80,
+    "5": 100,
+    "6": 120,
+    "7": 140,
+    "8": 160,
+    "9": 180,
+    "10": 200,
+    "11": 220
+  },
+  "food": [
+    {
+      "level": 1,
+      "name": "蕃茄醬",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 30,
+        "noPool": true
+      },
+      "effectDescription": "回復約30MP無法注入魔池",
+      "materials": [
+        {
+          "name": "蕃茄",
+          "level": 1,
+          "quantity": 5
+        },
+        {
+          "name": "瓶子",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "name": "麵包",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 100,
+        "poolLimit": 5000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約100MP魔池上限5000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "小麥粉",
+          "level": 1,
+          "quantity": 16
+        },
+        {
+          "name": "牛奶",
+          "level": 2,
+          "quantity": 10
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "蛋包飯",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 150,
+        "poolLimit": 15000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約150MP魔池上限15000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "雞蛋",
+          "level": 1,
+          "quantity": 10
+        },
+        {
+          "name": "牛奶",
+          "level": 2,
+          "quantity": 15
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 5
+        },
+        {
+          "name": "芹菜",
+          "level": 4,
+          "quantity": 1
+        },
+        {
+          "name": "蕃茄醬",
+          "level": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "法國麵包",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 200,
+        "poolLimit": 20000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約200MP魔池上限20000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "小麥粉",
+          "level": 1,
+          "quantity": 20
+        },
+        {
+          "name": "牛奶",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "炒麵",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 250,
+        "poolLimit": 30000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約250MP魔池上限30000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "小麥粉",
+          "level": 1,
+          "quantity": 20
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 10
+        },
+        {
+          "name": "海苔",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "薑",
+          "level": 5,
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "青椒肉絲",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 300,
+        "poolLimit": 40000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約300MP魔池上限40000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "青椒",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 10
+        },
+        {
+          "name": "竹筍",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "牛肉",
+          "level": 5,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "猛毒的餌",
+      "type": "料理",
+      "effect": {},
+      "effectDescription": "任務捕捉獅鷲獸用配方於捕捉獅鷲獸獲得",
+      "materials": [
+        {
+          "name": "必死的劇藥",
+          "quantity": 1
+        },
+        {
+          "name": "牛肉",
+          "level": 5,
+          "quantity": 20
+        }
+      ],
+      "notes": "任務用: 捕捉獅鷲獸"
+    },
+    {
+      "level": 4,
+      "name": "燒雞",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 350,
+        "poolLimit": 50000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約350MP魔池上限50000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "雞肉",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "胡椒",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "檸檬草",
+          "level": 2,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "親子丼",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 400,
+        "poolLimit": 60000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約400MP魔池上限60000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "雞蛋",
+          "level": 1,
+          "quantity": 20
+        },
+        {
+          "name": "蔥",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "醬油",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "雞肉",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "米",
+          "level": 6,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "漢堡",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 450,
+        "poolLimit": 70000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約450MP魔池上限70000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "雞蛋",
+          "level": 1,
+          "quantity": 20
+        },
+        {
+          "name": "蔥",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "蕃茄醬",
+          "level": 1,
+          "quantity": 3
+        },
+        {
+          "name": "牛肉",
+          "level": 5,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "星鰻飯糰",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 500,
+        "poolLimit": 90000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約500MP魔池上限90000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "醬油",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "海苔",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "星鰻",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "米",
+          "level": 6,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "炒麵麵包",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 550,
+        "poolLimit": 120000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約550MP魔池上限120000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "法國麵包",
+          "level": 2,
+          "quantity": 1
+        },
+        {
+          "name": "炒麵",
+          "level": 3,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "壽喜鍋",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 600,
+        "poolLimit": 150000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約600MP魔池上限150000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蔥",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "醬油",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "牛肉",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "砂糖",
+          "level": 6,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "咖哩飯",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 650,
+        "poolLimit": 180000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約650MP魔池上限180000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蔥",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "雞肉",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "馬鈴薯",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "米",
+          "level": 6,
+          "quantity": 20
+        },
+        {
+          "name": "咖哩塊",
+          "level": 7,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "韓式泡菜飯",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 700,
+        "poolLimit": 240000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約700MP魔池上限240000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "雞蛋",
+          "level": 1,
+          "quantity": 10
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "牛肉",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "米",
+          "level": 6,
+          "quantity": 20
+        },
+        {
+          "name": "辣椒",
+          "level": 7,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "水龍料理",
+      "type": "料理",
+      "effect": {
+        "loyaltyBonus": 10
+      },
+      "effectDescription": "增加10點忠誠配方於時波之祠獲得",
+      "materials": [
+        {
+          "name": "水龍的鰭",
+          "level": 1,
+          "quantity": 1
+        }
+      ],
+      "notes": "配方來源: 時波之祠"
+    },
+    {
+      "level": 8,
+      "name": "螃蟹鍋",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 750,
+        "poolLimit": 320000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約750MP魔池上限320000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蔥",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "醬油",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "馬鈴薯",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "辣椒",
+          "level": 7,
+          "quantity": 20
+        },
+        {
+          "name": "螃蟹",
+          "level": 8,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "name": "牛排",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 800,
+        "poolLimit": 360000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約800MP魔池上限360000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "胡椒",
+          "level": 5,
+          "quantity": 10
+        },
+        {
+          "name": "馬鈴薯",
+          "level": 5,
+          "quantity": 10
+        },
+        {
+          "name": "高級奶油",
+          "level": 7,
+          "quantity": 20
+        },
+        {
+          "name": "霜降牛肉",
+          "level": 8,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "name": "魅惑的哈蜜瓜麵包",
+      "type": "料理",
+      "effect": {
+        "encounterRateUp": true
+      },
+      "effectDescription": "遇敵率上升(限芙蕾雅島使用)",
+      "materials": [
+        {
+          "name": "小麥粉",
+          "level": 1,
+          "quantity": 20
+        },
+        {
+          "name": "牛奶",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "砂糖",
+          "level": 6,
+          "quantity": 20
+        },
+        {
+          "name": "魔法蘿卜",
+          "level": 8,
+          "quantity": 10
+        },
+        {
+          "name": "阿巴尼斯哈蜜瓜",
+          "level": 8,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "name": "醋飯壽司",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 850,
+        "poolLimit": 480000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約850MP魔池上限480000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "海苔",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "星鰻",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "米",
+          "level": 6,
+          "quantity": 20
+        },
+        {
+          "name": "螃蟹",
+          "level": 8,
+          "quantity": 20
+        },
+        {
+          "name": "伊勢蝦",
+          "level": 9,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "name": "豪華壽司組",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 900,
+        "poolLimit": 540000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約900MP魔池上限540000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "雞蛋",
+          "level": 1,
+          "quantity": 20
+        },
+        {
+          "name": "醬油",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "海苔",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "伊勢蝦",
+          "level": 9,
+          "quantity": 15
+        },
+        {
+          "name": "海膽",
+          "level": 9,
+          "quantity": 15
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "name": "魚翅湯",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 1000,
+        "poolLimit": 800000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約1000MP魔池上限800000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "雞蛋",
+          "level": 1,
+          "quantity": 20
+        },
+        {
+          "name": "蔥",
+          "level": 2,
+          "quantity": 20
+        },
+        {
+          "name": "鹽",
+          "level": 3,
+          "quantity": 20
+        },
+        {
+          "name": "胡椒",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "魚翅",
+          "level": 10,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "name": "鱉料理",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 1200,
+        "poolLimit": -1
+      },
+      "effectDescription": "回復約1200MP魔池無上限",
+      "materials": [
+        {
+          "name": "辣椒",
+          "level": 7,
+          "quantity": 20
+        },
+        {
+          "name": "螃蟹",
+          "level": 8,
+          "quantity": 20
+        },
+        {
+          "name": "伊勢蝦",
+          "level": 9,
+          "quantity": 10
+        },
+        {
+          "name": "海膽",
+          "level": 9,
+          "quantity": 10
+        },
+        {
+          "name": "鱉",
+          "level": 10,
+          "quantity": 20
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "name": "韓式海鮮鍋",
+      "type": "料理",
+      "effect": {
+        "mpRestore": 1400,
+        "noPool": true
+      },
+      "effectDescription": "回復約1400MP無法注入魔池",
+      "materials": [
+        {
+          "name": "竹莢魚",
+          "level": 4,
+          "quantity": 20
+        },
+        {
+          "name": "螃蟹",
+          "level": 8,
+          "quantity": 20
+        },
+        {
+          "name": "伊勢蝦",
+          "level": 9,
+          "quantity": 40
+        },
+        {
+          "name": "鱉",
+          "level": 10,
+          "quantity": 20
+        },
+        {
+          "name": "泡菜",
+          "level": 1,
+          "quantity": 3
+        }
+      ]
+    }
+  ],
+  "potion": [
+    {
+      "level": 1,
+      "name": "生命力回復藥(100)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 100,
+        "poolLimit": 10000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約100HP血池上限10000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蘋果薄荷",
+          "level": 1,
+          "quantity": 10
+        },
+        {
+          "name": "檸檬草",
+          "level": 2,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "生命力回復藥(150)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 150,
+        "poolLimit": 15000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約150HP血池上限15000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蘋果薄荷",
+          "level": 1,
+          "quantity": 10
+        },
+        {
+          "name": "檸檬草",
+          "level": 2,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "生命力回復藥(200)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 200,
+        "poolLimit": 20000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約200HP血池上限20000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蘋果薄荷",
+          "level": 1,
+          "quantity": 10
+        },
+        {
+          "name": "檸檬草",
+          "level": 2,
+          "quantity": 10
+        },
+        {
+          "name": "蝴蝶花",
+          "level": 3,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "猛毒的餌",
+      "type": "藥水",
+      "effect": {},
+      "effectDescription": "任務捕捉獅鷲獸用配方於捕捉獅鷲獸獲得",
+      "materials": [
+        {
+          "name": "必死的劇藥",
+          "quantity": 1
+        },
+        {
+          "name": "牛肉",
+          "level": 5,
+          "quantity": 20
+        }
+      ],
+      "notes": "任務用: 捕捉獅鷲獸"
+    },
+    {
+      "level": 4,
+      "name": "生命力回復藥(250)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 250,
+        "poolLimit": 40000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約250HP血池上限40000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "檸檬草",
+          "level": 2,
+          "quantity": 10
+        },
+        {
+          "name": "蝴蝶花",
+          "level": 3,
+          "quantity": 15
+        },
+        {
+          "name": "果梨",
+          "level": 4,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "畢克銀酸",
+      "type": "藥水",
+      "effect": {},
+      "effectDescription": "任務魔族改造計劃用配方於魔族改造計劃獲得",
+      "materials": [
+        {
+          "name": "摩斯蜥蜴",
+          "level": 4,
+          "quantity": 1
+        },
+        {
+          "name": "井底蛙",
+          "level": 4,
+          "quantity": 1
+        },
+        {
+          "name": "惡魔魚",
+          "level": 4,
+          "quantity": 1
+        },
+        {
+          "name": "迷你蝙蝠的血",
+          "quantity": 1
+        },
+        {
+          "name": "純銀",
+          "level": 4,
+          "quantity": 1
+        }
+      ],
+      "notes": "任務用: 魔族改造計劃"
+    },
+    {
+      "level": 5,
+      "name": "生命力回復藥(300)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 300,
+        "poolLimit": 60000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約300HP血池上限60000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蝴蝶花",
+          "level": 3,
+          "quantity": 15
+        },
+        {
+          "name": "果梨",
+          "level": 4,
+          "quantity": 15
+        },
+        {
+          "name": "桃木",
+          "level": 5,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "生命力回復藥(400)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 400,
+        "poolLimit": 120000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約400HP血池上限120000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "果梨",
+          "level": 4,
+          "quantity": 10
+        },
+        {
+          "name": "桃木",
+          "level": 5,
+          "quantity": 15
+        },
+        {
+          "name": "番紅花",
+          "level": 6,
+          "quantity": 15
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "生命力回復藥(500)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 500,
+        "poolLimit": 200000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約500HP血池上限200000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "果梨",
+          "level": 4,
+          "quantity": 5
+        },
+        {
+          "name": "桃木",
+          "level": 5,
+          "quantity": 13
+        },
+        {
+          "name": "番紅花",
+          "level": 6,
+          "quantity": 15
+        },
+        {
+          "name": "百里香",
+          "level": 7,
+          "quantity": 15
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "水龍藥水",
+      "type": "藥水",
+      "effect": {
+        "charmBonus": 10
+      },
+      "effectDescription": "增加10點魅力配方於時波之祠獲得",
+      "materials": [
+        {
+          "name": "渾濁的水",
+          "level": 1,
+          "quantity": 1
+        },
+        {
+          "name": "百里香",
+          "level": 7,
+          "quantity": 20
+        }
+      ],
+      "notes": "配方來源: 時波之祠"
+    },
+    {
+      "level": 8,
+      "name": "生命力回復藥(600)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 600,
+        "poolLimit": 360000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約600HP血池上限360000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蘋果薄荷",
+          "level": 1,
+          "quantity": 10
+        },
+        {
+          "name": "果梨",
+          "level": 4,
+          "quantity": 10
+        },
+        {
+          "name": "番紅花",
+          "level": 6,
+          "quantity": 10
+        },
+        {
+          "name": "百里香",
+          "level": 7,
+          "quantity": 20
+        },
+        {
+          "name": "瞿麥",
+          "level": 8,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "name": "香水深藍九號",
+      "type": "藥水",
+      "effect": {
+        "encounterRateDown": true
+      },
+      "effectDescription": "遇敵率下降(限芙蕾雅島使用)配方於魔法大學(36.20)購買",
+      "materials": [
+        {
+          "name": "百里香",
+          "level": 7,
+          "quantity": 10
+        },
+        {
+          "name": "瞿麥",
+          "level": 8,
+          "quantity": 10
+        },
+        {
+          "name": "魔法蘿卜",
+          "level": 8,
+          "quantity": 20
+        },
+        {
+          "name": "溼地毒蛇",
+          "level": 8,
+          "quantity": 10
+        },
+        {
+          "name": "水的水晶碎片",
+          "quantity": 5
+        }
+      ],
+      "notes": "配方來源: 魔法大學(36.20)"
+    },
+    {
+      "level": 9,
+      "name": "生命力回復藥(800)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 800,
+        "poolLimit": 640000,
+        "monthCardDouble": true
+      },
+      "effectDescription": "回復約800HP血池上限640000(月卡雙倍)",
+      "materials": [
+        {
+          "name": "蝴蝶花",
+          "level": 3,
+          "quantity": 5
+        },
+        {
+          "name": "番紅花",
+          "level": 6,
+          "quantity": 7
+        },
+        {
+          "name": "瞿麥",
+          "level": 8,
+          "quantity": 5
+        },
+        {
+          "name": "茴香",
+          "level": 9,
+          "quantity": 10
+        },
+        {
+          "name": "七葉樹",
+          "level": 10,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "name": "生命力回復藥(1000)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 1000,
+        "poolLimit": -1
+      },
+      "effectDescription": "回復約1000HP血池無上限",
+      "materials": [
+        {
+          "name": "蘋果薄荷",
+          "level": 1,
+          "quantity": 10
+        },
+        {
+          "name": "檸檬草",
+          "level": 2,
+          "quantity": 10
+        },
+        {
+          "name": "瞿麥",
+          "level": 8,
+          "quantity": 6
+        },
+        {
+          "name": "茴香",
+          "level": 9,
+          "quantity": 8
+        },
+        {
+          "name": "七葉樹",
+          "level": 10,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "name": "生命力回復藥(1400)",
+      "type": "藥水",
+      "effect": {
+        "hpRestore": 1400,
+        "noPool": true
+      },
+      "effectDescription": "回復約1400HP無法注入血池",
+      "materials": [
+        {
+          "name": "桃木",
+          "level": 5,
+          "quantity": 20
+        },
+        {
+          "name": "瞿麥",
+          "level": 8,
+          "quantity": 20
+        },
+        {
+          "name": "茴香",
+          "level": 9,
+          "quantity": 10
+        },
+        {
+          "name": "七葉樹",
+          "level": 10,
+          "quantity": 10
+        },
+        {
+          "name": "井底蛙",
+          "level": 4,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
