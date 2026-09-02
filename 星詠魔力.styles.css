@@ -1,8 +1,7 @@
-/* /Components/法蘭城地圖元件.razor.rz.scp.css */
-.map-scroll-viewport[b-wj9cp9p38r] {
+/* /Components/視窗/法蘭城地圖視窗元件.razor.rz.scp.css */
+.map-scroll-viewport[b-ewrdzgw9z0] {
     width: 100%;
     max-height: 700px;
-    overflow: auto;
     border: 2px solid #ddd;
     border-radius: 8px;
     background-color: #f5f5f5;
@@ -12,14 +11,16 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: auto; /* 💡 讓高度由裡面的圖片自動決定 */
+    overflow: visible; /* 💡 允許內容自然呈現，不觸發多餘的捲軸機制 */
 }
 
-.map-scaled-wrapper[b-wj9cp9p38r] {
+.map-scaled-wrapper[b-ewrdzgw9z0] {
     position: relative;
     flex: 0 0 auto;
 }
 
-.image-container[b-wj9cp9p38r] {
+.image-container[b-ewrdzgw9z0] {
     position: absolute;
     /*
          * wrapper 的中心
@@ -40,7 +41,7 @@
 }
 
 /* 標記容器：置中對齊像素點 */
-.marker-container[b-wj9cp9p38r] {
+.marker-container[b-ewrdzgw9z0] {
     position: absolute;
     z-index: 10;
     display: flex;
@@ -56,7 +57,7 @@
 }
 
 /* 文字標籤 */
-.marker-label[b-wj9cp9p38r] {
+.marker-label[b-ewrdzgw9z0] {
     position: absolute;
     bottom: 24px; /* 讓文字浮在紅點上方，原 JS 是偏右下方，可依喜好調整 */
     background: rgba(255, 255, 255, 0.95);
@@ -67,18 +68,18 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.label-text[b-wj9cp9p38r] {
+.label-text[b-ewrdzgw9z0] {
     font-size: 14px;
     font-weight: bold;
     color: #333;
 }
 
-.price-tag[b-wj9cp9p38r] {
+.price-tag[b-ewrdzgw9z0] {
     color: #b22222;
     margin-left: 4px;
 }
 
-.label-arrow[b-wj9cp9p38r] {
+.label-arrow[b-ewrdzgw9z0] {
     position: absolute;
     bottom: -8px; /* 讓箭頭凸出在文字框的正下方 */
     left: 50%; /* 靠齊文字框的 50% 寬度處 */
@@ -92,7 +93,7 @@
 }
 
 /* 2. 中心紅點 */
-.red-dot[b-wj9cp9p38r] {
+.red-dot[b-ewrdzgw9z0] {
     width: 16px;
     height: 16px;
     background-color: red;
