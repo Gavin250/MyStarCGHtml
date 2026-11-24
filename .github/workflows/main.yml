@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -28,27 +27,43 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 1. 安裝 .NET 11 SDK
+      - name: Setup .NET 11
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview' # 若已正式發布可移除此行，保留亦相容
+
+      # 2. 編譯並發佈 Blazor WebAssembly 專案到 release 資料夾
+      - name: Publish Blazor WASM
+        run: dotnet publish BlazorWebAssemblyClient.csproj -c Release -o release --nologo
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # 3. 驗證發佈後的 release/wwwroot 內檔案
       - name: Verify Blazor files
         run: |
           echo "=== index.html references ==="
-          grep -o 'dotnet\.[a-z0-9]*\.js' index.html | head -10
+          grep -o 'dotnet\.[a-z0-9]*\.js' release/wwwroot/index.html | head -10
 
           echo "=== Framework files ==="
-          ls -lh _framework/ | head -30
+          ls -lh release/wwwroot/_framework/ | head -30
 
           echo "=== SHA256 ==="
-          sha256sum _framework/dotnet.*.js
+          sha256sum release/wwwroot/_framework/dotnet.*.js
 
-      - name: Add .nojekyll
-        run: touch .nojekyll
+      # 4. 在發佈目錄加上 .nojekyll 並處理 SPA 路由 404
+      - name: Add .nojekyll and 404.html
+        run: |
+          touch release/wwwroot/.nojekyll
+          cp release/wwwroot/index.html release/wwwroot/404.html
 
+      # 5. 上傳編譯後的 release/wwwroot 目錄
       - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: release/wwwroot
 
       - name: Deploy to GitHub Pages
         id: deployment
