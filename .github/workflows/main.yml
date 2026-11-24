@@ -1,3 +1,4 @@
+
 name: Deploy GitHub Pages
 
 on:
@@ -10,6 +11,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
   group: pages
@@ -24,34 +26,50 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      # 1. 取得 GitHub Repository
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 2. 設定 GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # 3. 確認 Blazor 發布檔案
       - name: Verify Blazor files
         run: |
-          echo "=== index.html references ==="
-          grep -o 'dotnet\.[a-z0-9]*\.js' index.html | head -10
+          echo "=== Check index.html ==="
+          test -f index.html
 
-          echo "=== Framework files ==="
+          echo "=== Check base href ==="
+          grep '<base href=' index.html
+
+          echo "=== Check framework ==="
+          test -d _framework
           ls -lh _framework/ | head -30
 
-          echo "=== SHA256 ==="
-          sha256sum _framework/dotnet.*.js
+          echo "=== Check Blazor JS ==="
+          grep -o 'dotnet\.[a-z0-9]*\.js' index.html | head -10
 
-      - name: Add .nojekyll and 404.html
+      # 4. 建立 GitHub Pages 必要檔案
+      - name: Prepare Pages
         run: |
           touch .nojekyll
           cp index.html 404.html
 
-      # 關鍵修正：Pages 專用的 upload-pages-artifact 最新版本是 @v3（不是 @v4）
+      # 5. 上傳 GitHub Pages Artifact
       - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+        id: upload
+        uses: actions/upload-pages-artifact@v4
         with:
           path: .
+          include-hidden-files: true
 
+      # 6. 確認 Artifact
+      - name: Verify Artifact
+        run: |
+          echo "Artifact ID: ${{ steps.upload.outputs.artifact_id }}"
+
+      # 7. 部署至 GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
