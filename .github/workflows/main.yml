@@ -7,56 +7,57 @@ on:
       - main
   workflow_dispatch:
 
+# 全域基本權限
 permissions:
   contents: read
-  pages: write
-  id-token: write
-  actions: read
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+
+  # ==================================
+  # Job 1：上傳網站檔案
+  # ==================================
+  build:
     runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
     steps:
-      # 1. 取得 GitHub Repository
+      # 取得 Repository
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. 設定 GitHub Pages
+      # 設定 Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # 3. 確認 Blazor 發布檔案
+      # 檢查 Blazor 發布檔案
       - name: Verify Blazor files
         run: |
           echo "=== Check index.html ==="
           test -f index.html
-
-          echo "=== Check base href ==="
           grep '<base href=' index.html
 
           echo "=== Check framework ==="
           test -d _framework
           ls -lh _framework/ | head -30
 
-          echo "=== Check Blazor JS ==="
+          echo "=== Check dotnet JS ==="
           grep -o 'dotnet\.[a-z0-9]*\.js' index.html | head -10
 
-      # 4. 建立 GitHub Pages 必要檔案
+      # 建立 GitHub Pages 必要檔案
       - name: Prepare Pages
         run: |
           touch .nojekyll
           cp index.html 404.html
 
-      # 5. 上傳 GitHub Pages Artifact
+      # 上傳 Artifact
       - name: Upload Pages Artifact
         id: upload
         uses: actions/upload-pages-artifact@v4
@@ -64,12 +65,30 @@ jobs:
           path: .
           include-hidden-files: true
 
-      # 6. 確認 Artifact
+      # 顯示 Artifact ID
       - name: Verify Artifact
         run: |
           echo "Artifact ID: ${{ steps.upload.outputs.artifact_id }}"
 
-      # 7. 部署至 GitHub Pages
+  # ==================================
+  # Job 2：部署網站
+  # ==================================
+  deploy:
+    runs-on: ubuntu-latest
+
+    # 關鍵：必須等 build 完成
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+      actions: read
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
