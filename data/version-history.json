@@ -2,47 +2,36 @@
   "CurrentVersion": "v1.2.0",
   "Developers": [
     {
-      "Name": "王小明",
-      "Role": "系統架構 / 後端開發",
-      "Email": "ming.wang@example.com"
-    },
-    {
-      "Name": "林美玲",
-      "Role": "UI/UX 設計 / 前端開發",
-      "Email": "meiling.lin@example.com"
-    },
-    {
-      "Name": "陳大文",
-      "Role": "資料庫管理 / DevOps",
-      "Email": "dawen.chen@example.com"
+      "Name": "紅豆牛奶冰",
+      "Role": "系統架構 / 後端開發 / UI/UX 設計 / 前端開發 / 資料庫管理 / DevOps",
+      "Email": "zedlazedla@hotmail.com"
     }
   ],
   "ChangeLogs": [
     {
       "Version": "v1.2.0",
-      "Date": "2026-11-24",
+      "Date": "2026-11-27",
       "IsLatest": true,
       "Changes": [
-        "新增：系統版本說明視窗與開發人員資訊",
-        "優化：報表匯出效能提升 40%",
-        "修正：行動裝置版面側邊欄破版問題"
+        "優化：魔力寶貝相關資料",
+        "修正：底層功能問題"
       ]
     },
     {
       "Version": "v1.1.0",
-      "Date": "2026-10-15",
+      "Date": "2026-11-15",
       "IsLatest": false,
       "Changes": [
-        "新增：權限管理模組與角色設定",
-        "調整：登入頁面視覺改版"
+        "新增：魔力寶貝相關資料初版",
+        "新增：網站底層功能"
       ]
     },
     {
       "Version": "v1.0.0",
-      "Date": "2026-09-01",
+      "Date": "2026-11-01",
       "IsLatest": false,
       "Changes": [
-        "系統預計上線"
+        "開發初版"
       ]
     }
   ]
